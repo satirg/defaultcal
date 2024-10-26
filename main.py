@@ -305,7 +305,7 @@ def main():
         si=(Statutory_inc*total_payable)/100
 
         # Display results
-        st.write("Total Rate:", total_payable)
+        st.write("Total Rate excluding SI:", total_payable)
         st.write("Employer Share:", employer_share)
         st.write("Employee Share:", employee_share)
         st.write("Si increase:",si)

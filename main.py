@@ -302,13 +302,18 @@ def main():
         total_payable = total_rate * ips
         employee_share = round(total_payable / 6)
         employer_share = total_payable - employee_share
-        si=(Statutory_inc*total_payable)/100
+        si=round(Statutory_inc*total_payable)/100)
+        total_incsi=sum_rates(total_payable+si)
 
-        # Display results
+        st.header("RESULTS ")
         st.write("Total Rate excluding SI:", total_payable)
+        st.write("Total Rate Including SI:", total_incsi)
         st.write("Employer Share:", employer_share)
         st.write("Employee Share:", employee_share)
         st.write("Si increase:",si)
+        
+
+
 
 if __name__ == "__main__":
     main()

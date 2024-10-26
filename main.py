@@ -300,7 +300,7 @@ def main():
         # Calculate total rate
         total_rate = sum_rates(start_month, start_year, end_month, end_year, rates_list)
         total_payable = total_rate * ips
-        employee_share = total_payable / 6
+        employee_share = round(total_payable / 6)
         employer_share = total_payable - employee_share
         si=(Statutory_inc*total_payable)/100
 

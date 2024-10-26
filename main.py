@@ -282,7 +282,8 @@ rates_list = [(7,2002,170),
 
 
 def main():
-    st.title("Rate Calculator Developed By Syed Atir Gerdazi")
+    st.title("Rate Calculator ")
+    st.title("Developed By Syed Atir Gerdazi ")
 
     # Input fields
     with st.form("my_form"):

@@ -288,9 +288,9 @@ def main():
     # Input fields
     with st.form("my_form"):
         start_month = st.selectbox("Start Month", options=range(1, 13))
-        start_year = st.selectbox("Start Year", options=range(2000, 2025))
+        start_year = st.selectbox("Start Year", options=range(2002, 2025))
         end_month = st.selectbox("End Month", options=range(1, 13))
-        end_year = st.selectbox("End Year", options=range(2000, 2025))
+        end_year = st.selectbox("End Year", options=range(2002, 2025))
         ips = st.number_input("Number of IPs",format="%d")
         Statutory_inc=st.selectbox("SI rate",options=range(2,52,2))
         submitted = st.form_submit_button("Calculate")

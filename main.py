@@ -293,6 +293,7 @@ def main():
         end_year = st.selectbox("End Year", options=range(2000, 2025))
         ips = st.number_input("Number of IPs")
         submitted = st.form_submit_button("Calculate")
+        Statutory_inc=st.number_input("SI rate",options=range(2,50))
 
     if submitted:
         # Calculate total rate
@@ -300,11 +301,13 @@ def main():
         total_payable = total_rate * ips
         employee_share = total_payable / 6
         employer_share = total_payable - employee_share
+        si=(Statutory_inc*total_payable)/100
 
         # Display results
         st.write("Total Rate:", total_payable)
         st.write("Employer Share:", employer_share)
         st.write("Employee Share:", employee_share)
+        st.wriite("Si increase:",si)
 
 if __name__ == "__main__":
     main()

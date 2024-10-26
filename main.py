@@ -8,7 +8,6 @@ def sum_rates(start_month, start_year, end_month, end_year, rates):
             total_rate += rate
     return total_rate
 
-# Sample rate data (replace with your actual data)
 rates_list = [(7,2002,170),
 (8,2002,170),
 (9,2002,170),

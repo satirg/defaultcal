@@ -292,8 +292,9 @@ def main():
         end_month = st.selectbox("End Month", options=range(1, 13))
         end_year = st.selectbox("End Year", options=range(2000, 2025))
         ips = st.number_input("Number of IPs")
-        submitted = st.form_submit_button("Calculate")
         Statutory_inc=st.selectbox("SI rate",options=range(2,50))
+        submitted = st.form_submit_button("Calculate")
+        
 
     if submitted:
         # Calculate total rate
@@ -307,7 +308,7 @@ def main():
         st.write("Total Rate:", total_payable)
         st.write("Employer Share:", employer_share)
         st.write("Employee Share:", employee_share)
-        st.wriite("Si increase:",si)
+        st.write("Si increase:",si)
 
 if __name__ == "__main__":
     main()

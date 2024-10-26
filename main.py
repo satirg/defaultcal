@@ -293,7 +293,7 @@ def main():
         end_year = st.selectbox("End Year", options=range(2000, 2025))
         ips = st.number_input("Number of IPs")
         submitted = st.form_submit_button("Calculate")
-        Statutory_inc=st.number_input("SI rate",options=range(2,50))
+        Statutory_inc=st.selectbox("SI rate",options=range(2,50))
 
     if submitted:
         # Calculate total rate

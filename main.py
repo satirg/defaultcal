@@ -302,7 +302,7 @@ def main():
         total_payable = total_rate * ips
         employee_share = round(total_payable / 6)
         employer_share = total_payable - employee_share
-        si=round(Statutory_inc*total_payable)/100)
+        si=round((Statutory_inc*total_payable)/100)
         total_incsi=sum_rates(total_payable+si)
 
         st.header("RESULTS ")

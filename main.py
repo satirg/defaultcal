@@ -306,8 +306,8 @@ def main():
         total_incsi=total_payable+si
 
         st.header("RESULTS ")
-        st.write("Total Rate excluding SI:", total_payable)
-        st.write("Total Rate Including SI:", total_incsi)
+        st.write("Total Payable excluding SI:", total_payable)
+        st.write("Total Payable Including SI:", total_incsi)
         st.write("Employer Share:", employer_share)
         st.write("Employee Share:", employee_share)
         st.write("Si increase:",si)

@@ -590,6 +590,13 @@ rates_list = [(7,1976,50),
 (10,2024,2220),
 (11,2024,2220),
 (12,2024,2220),
+(1,2025,2220),
+(2,2025,2220),
+(3,2025,2220),
+(4,2025,2220),
+(5,2025,2220),
+(6,2025,2220),
+(7,2025,2220)
 ]
 
 
@@ -600,9 +607,9 @@ def main():
     # Input fields
     with st.form("my_form"):
         start_month = st.selectbox("Start Month", options=range(1, 13))
-        start_year = st.selectbox("Start Year", options=range(2002, 2025))
+        start_year = st.selectbox("Start Year", options=range(1976, 2025))
         end_month = st.selectbox("End Month", options=range(1, 13))
-        end_year = st.selectbox("End Year", options=range(2002, 2025))
+        end_year = st.selectbox("End Year", options=range(1976, 2025))
         ips = st.number_input("Number of IPs",format="%d")
         Statutory_inc=st.selectbox("SI rate",options=range(2,52,2))
         submitted = st.form_submit_button("Calculate")
